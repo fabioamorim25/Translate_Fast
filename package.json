@@ -4,6 +4,7 @@
   "repository": "https://github.com/fabioamorim25/Translate_Fast.git",
   "description": "Traduzir frases ou palavras para continuar o trabalho",
   "main": "dist/server/main.js",
+  "type": "commonjs",
   "scripts": {
     "build": "vite build && prisma generate && tsc --build && node copy-files.js && node install-engines-on-mac.js",
     "start": "npm run build && concurrently \"vite\" \"cross-env NODE_ENV=development electron .\"",

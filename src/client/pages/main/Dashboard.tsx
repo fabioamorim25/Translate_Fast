@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header";
+import { FormTranslate } from "../../components/formTranslate";
 
 export function Dashboard() {
   // const {data} = trpc.ver.useQuery()
@@ -14,7 +15,9 @@ export function Dashboard() {
   return (
     <div className="text-center">
       <Header />
-      <Link to="/">Rota secundaria</Link>
+      {/* <Link to="/">Rota secundaria</Link> */}
+
+      <FormTranslate />
     </div>
   );
 }
